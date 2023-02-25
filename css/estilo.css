@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 20%;
+    margin-top: 6%;
+}
+
+.header {
+    background-color: black;
+    height: 12rem;
+}
+
+.collapse {
+    margin-right: 10%;
+}
+
+.anclas {
+    font-size: 1.6rem;
+    color: #FFC00F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 5%;
+}
+
+.navbar-toggler {
+    background-color: #FFC00F;
+    margin-right: 6%;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.MainInicio {
+    background-image: url(../img/hamburguesa-inicio.jpg);
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.slogan {
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12rem;
+    color: white;
+    font-weight: bold italic;
+    font-variant-ligatures: common-ligatures;
+    top: 0;
+    bottom: 0;
+}
+
+.PieInicio {
+    background-color: black;
+    height: 9rem;
+}
+
+.Mdisena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFC00F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    padding: 4rem;
+}
+
+/*NOSOTROS*/
+
+.ContenedorNosotros {
+    min-height: 100vh;
+    background-image: url(../img/nosotros-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "titulo titulo titulo"
+        "parrafo parrafo parrafo"
+        "parrafo parrafo parrafo"
+        "parrafo parrafo parrafo"
+        "parrafo parrafo parrafo"
+        "footer footer footer";
+}
+
+.Navegador {
+    grid-area: nav;
+}
+
+.titNosotros {
+    grid-area: titulo;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #FFC00F;
+    opacity: 80%;
+    text-shadow: 80%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.Nosotros {
+    font-size: 6rem;
+}
+
+.pNosotros {
+    grid-area: parrafo;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    background-color: #FFC00F;
+    opacity: 80%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    padding: 20px 10px 10px 10px;
+    width: 80%;
+    box-shadow: 80%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    padding-top: 16px;
+    font-size: 1rem;
+    color: #FFC00F;
+}
+
+@media (min-width: 0px) and (max-width: 990px) {
+    .Navegador {
+        display: none;
+    }
+}
+@media (min-width: 990px) {
+    .navMobile{
+        display: none;
+    }
+}
